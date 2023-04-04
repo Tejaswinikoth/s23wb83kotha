@@ -5,3 +5,17 @@ block content
   p Welcome to my second server
   button(type="button", class="btn btn-secondary btn-lg") Click here
   
+  <br/>
+  <br>
+  div(id="reduce") Reduce the value
+  
+  <br/>
+  script.
+     var count = 20;
+    var change = -1;
+    function doreduce(){
+    count += change;
+    change -= 1;
+    document.getElementById("reduce").innerHTML=`Count ${count} with change ${change}`;
+    }
+  button(type="button" onclick="doReduce()") Reduce 
