@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1   Board Display
-  
+    let query = req.query;
+    console.log(`rows ${query.rows}`);
+    console.log(`cols ${query.cols}`);
+
